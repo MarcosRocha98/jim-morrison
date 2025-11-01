@@ -1,0 +1,151 @@
+/* Layout */
+
+/* Variáveis */
+:root {
+    --preto: #1B1B1B;
+    --dourado: #C9B36C;
+    --branco: #FFFFFF;
+    --douradoClaro: #D2B86B;
+    --areia: #B86F3E;
+    --verde: #3E8B4F;
+    --azul: #3B6DA3;
+}
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cinzel Decorative';
+}
+
+.container {
+    display: flex;
+    margin: 0 auto;
+}
+
+/* Fim - Layout */
+
+
+/* Smartphone Portrait */
+
+/* Cabeçalho */
+header {
+    height: 55px;
+    background-color: var(--preto);
+    border-bottom: 2px solid var(--dourado);
+}
+
+#logo img {
+    width: 100px;
+    height: 100px;
+}
+
+#check {
+    display: none;
+}
+
+label {
+    color: rgba(201, 179, 108);
+    font-size: 2rem;
+    position: fixed;
+    right: 15px;
+    top: 5px;
+}
+
+nav ul {
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top: 55px;
+    right: -50%;
+    width: 50%;
+    transition: all 0.5s;
+}
+
+/* Ação para a caixa checkbox */
+/* Quando selecionar, mudar as propridades ul */
+#check:checked~ul {
+    right: 0px;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 15px;
+    text-align: right;
+    border-bottom: 1px solid var(--dourado);
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--dourado)
+}
+
+/* Fim - Smartphone Portrait */
+
+/* Smartphone Landscape */
+@media (min-width: 576px) {
+
+    /* Layout */
+    .container {
+        max-width: 540px;
+    }
+
+    /* Cabeçalho */
+    nav ul {
+        width: 40%;
+        right: -40%;
+    }
+}
+
+/* Fim - Smartphone Landscape */
+
+/* Tablet Portrait */
+@media (min-width: 768px) {
+
+    /* Layout */
+    .container {
+        max-width: 720px;
+    }
+}
+
+/* Fim - Tablet Portrait */
+
+
+/* Tablet Landscape */
+@media (min-width: 992px) {
+
+    /* Layout */
+    .container {
+        max-width: 960px;
+    }
+}
+
+/* Fim - Tablet Landscape */
+
+
+/* Notebook/PC */
+@media (min-width: 1200px) {
+
+    /* Layout */
+    .container {
+        max-width: 1140px;
+    }
+}
+
+/* Fim - Notebook/PC */
+
+
+/* FULL HD / 4K */
+@media (min-width: 1400px) {
+
+    /* Layout */
+    .container {
+        max-width: 1320px;
+    }
+}
+
+/* Fim - FULL HD / 4K */

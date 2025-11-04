@@ -27,6 +27,17 @@ body {
     margin: 0 auto;
 }
 
+.btn {
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 60;
+    background-color: var(--branco);
+    padding: 2px 20px;
+    color: var(--areia);
+    border-radius: 25px;
+    border: 2px solid var(--douradoClaro);
+}
+
 /* Fim - Layout */
 
 
@@ -40,8 +51,8 @@ header {
 }
 
 #logo img {
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
 }
 
 #check {
@@ -84,6 +95,35 @@ nav ul li a {
     color: var(--dourado)
 }
 
+/* Principal */
+main {
+    height: 61vh;
+    background: url(./img/lizard.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+main .container {
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center bottom;
+    text-shadow: 0px 5px 10px var(--preto), 0px 10px 10px rgba(0, 0, 0, 0.15), 0px 15px 15px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
+}
+
+main h1 {
+    color: var(--dourado);
+    margin-top: 25px;
+}
+
+main h2 {
+    color: #FFFFFF;
+    font-size: 1.85rem;
+    font-weight: 100;
+    text-shadow: 0px 5px 10px var(--preto), 0px 10px 10px rgba(0, 0, 0, 0.15), 0px 15px 15px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 5px;
+}
+
 /* Fim - Smartphone Portrait */
 
 /* Smartphone Landscape */
@@ -99,6 +139,16 @@ nav ul li a {
         width: 40%;
         right: -40%;
     }
+
+    /* Principal */
+    main {
+        height: 130vh;
+
+    }
+
+    main h1 {
+        font-size: 2.75rem;
+    }
 }
 
 /* Fim - Smartphone Landscape */
@@ -109,6 +159,19 @@ nav ul li a {
     /* Layout */
     .container {
         max-width: 720px;
+    }
+
+    /* Principal */
+    main {
+        height: 70vh;
+    }
+
+    main h1 {
+        font-size: 3.9rem;
+    }
+
+    main h2 {
+        font-size: 3rem;
     }
 }
 
@@ -122,6 +185,11 @@ nav ul li a {
     .container {
         max-width: 960px;
     }
+
+    /* Principal */
+    main {
+        height: 90vh;
+    }
 }
 
 /* Fim - Tablet Landscape */
@@ -134,6 +202,13 @@ nav ul li a {
     .container {
         max-width: 1140px;
         justify-content: space-between;
+    }
+
+    main .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
     }
 
     /* Cabeçalho */
@@ -166,6 +241,24 @@ nav ul li a {
     nav ul li a:hover {
         color: var(--areia);
     }
+
+    /* Principal */
+    main {
+        height: 85vh;
+    }
+
+    main h1 {
+        margin-bottom: 0.3rem;
+    }
+
+    main h2 {
+        margin-top: 0;
+        margin-bottom: 0.5rem;
+    }
+
+    main a.btn {
+        margin-top: 0;
+    }
 }
 
 /* Fim - Notebook/PC */
@@ -177,6 +270,11 @@ nav ul li a {
     /* Layout */
     .container {
         max-width: 1320px;
+    }
+
+    /* Principal */
+    main h1 {
+        font-size: 6rem;
     }
 }
 

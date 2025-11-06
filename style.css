@@ -177,6 +177,98 @@ main h2 {
     margin-left: 15px;
 }
 
+/* Poeta do Caos */
+
+#poetacaos {
+    background-color: var(--preto);
+    padding: 50px 10px;
+}
+
+#poetacaos .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#textoPoeta h2 {
+    margin-bottom: 15px;
+    color: var(--dourado);
+    text-align: center;
+    font-weight: 900;
+}
+
+#textoPoeta p {
+    margin-bottom: 15px;
+    color: var(--branco);
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#video {
+    display: flex;
+    justify-content: center;
+}
+
+#video iframe {
+    width: 340px;
+    height: 191px;
+}
+
+/* JimDoors */
+
+#jimdoors {
+    padding: 50px 10px;
+}
+
+#jimdoors .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#textoJimDoors h2 {
+    margin-bottom: 15px;
+    color: var(--dourado);
+    text-align: center;
+    font-weight: 900;
+}
+
+#textoJimDoors p {
+    margin-bottom: 15px;
+    color: var(--preto);
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#jimdoors .qrcode {
+    display: none;
+}
+
+/*#jimdoors .qrcode {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#jimdoors .qrcode img {
+    width: 300px;  
+    height: auto;
+} */
+
+#jimdoors .btnInsta {
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 60;
+    background-color: var(--douradoClaro);
+    padding: 2px 20px;
+    color: var(--branco);
+    border-radius: 25px;
+    border: 2px solid var(--douradoClaro);
+    width: fit-content;
+    margin: 20px auto;
+    display: block;
+}
+
 /* Fim - Smartphone Portrait */
 
 /* Smartphone Landscape */
@@ -279,7 +371,7 @@ main h2 {
 
     /* Destaque */
 
-     #hero-text {
+    #hero-text {
         max-width: 900px;
     }
 }
@@ -365,23 +457,57 @@ main h2 {
     .topics {
         display: flex;
     }
-}
 
-/* Fim - Notebook/PC */
+    /* O Poeta do Caos */
 
-
-/* FULL HD / 4K */
-@media (min-width: 1400px) {
-
-    /* Layout */
-    .container {
-        max-width: 1320px;
+    #poetacaos .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
-    /* Principal */
-    main h1 {
-        font-size: 6rem;
+    #textoPoeta h2 {
+        margin-bottom: 15px;
+        font-weight: 900;
     }
-}
 
-/* Fim - FULL HD / 4K */
+    #textoPoeta p {
+        margin-bottom: 15px;
+    }
+
+    #video iframe {
+        width: 450px;
+        height: 260px;
+    }
+
+    /* JimDoors */
+
+    #jimdoors .qrcode {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    #jimdoors .qrcode img {
+        width: 300px;
+        height: auto;
+    }
+
+    /* Fim - Notebook/PC */
+
+
+    /* FULL HD / 4K */
+    @media (min-width: 1400px) {
+
+        /* Layout */
+        .container {
+            max-width: 1320px;
+        }
+
+        /* Principal */
+        main h1 {
+            font-size: 6rem;
+        }
+    }
+
+    /* Fim - FULL HD / 4K */

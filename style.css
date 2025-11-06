@@ -124,6 +124,59 @@ main h2 {
     margin-bottom: 5px;
 }
 
+/* Destaque */
+#destaque {
+    padding: 50px 10px;
+    background: url(./img/jim.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#destaque .container {
+    flex-direction: column;
+}
+
+#hero {
+    text-align: center;
+}
+
+#hero img {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 30px;
+}
+
+#hero-text h2 {
+    margin-bottom: 15px;
+    color: var(--dourado);
+    text-align: center;
+    font-weight: 900;
+}
+
+#hero-text p {
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 800;
+}
+
+.topics {
+    display: flex;
+    align-items: center;
+}
+
+.topics img {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    width: 80px;
+    height: 80px;
+}
+
+.topics p {
+    margin-left: 15px;
+}
+
 /* Fim - Smartphone Portrait */
 
 /* Smartphone Landscape */
@@ -148,6 +201,39 @@ main h2 {
 
     main h1 {
         font-size: 2.75rem;
+    }
+
+    /* Destaque */
+    #destaque {
+        padding: 50px 0px;
+    }
+
+    #destaque>.container {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #hero {
+        text-align: left;
+    }
+
+    #hero img {
+        display: none;
+        width: 200px;
+        height: 200px;
+        margin: 0px 30px 0px 0px;
+    }
+
+    #hero-text {
+        max-width: 400px;
+    }
+
+    #hero-text p {
+        text-align: left;
+    }
+
+    .topics {
+        display: none;
     }
 }
 
@@ -189,6 +275,12 @@ main h2 {
     /* Principal */
     main {
         height: 90vh;
+    }
+
+    /* Destaque */
+
+     #hero-text {
+        max-width: 900px;
     }
 }
 
@@ -259,6 +351,20 @@ main h2 {
     main a.btn {
         margin-top: 0;
     }
+
+    /* Destaque */
+    #destaque {
+        background-attachment: fixed;
+    }
+
+    #hero img {
+        width: 400px;
+        height: 400px;
+    }
+
+    .topics {
+        display: flex;
+    }
 }
 
 /* Fim - Notebook/PC */
@@ -275,7 +381,7 @@ main h2 {
     /* Principal */
     main h1 {
         font-size: 6rem;
-    }  
+    }
 }
 
 /* Fim - FULL HD / 4K */

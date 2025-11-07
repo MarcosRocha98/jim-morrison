@@ -9,3 +9,7 @@ Marcos Rocha Silva
 
 ## Acessar o site
 ![](img/qrcode.png)
+
+Aviso legal: Este site é um projeto de fã dedicado à memória e obra de Jim Morrison e The Doors. Não possui qualquer vínculo, associação ou endosso oficial por parte da banda, de seus integrantes, de seus representantes ou de detentores de direitos autorais e marcas registradas relacionadas.
+Todas as imagens, letras, logotipos e materiais aqui exibidos pertencem aos seus respectivos proprietários e são utilizados apenas com propósitos educacionais, culturais e de homenagem, sem fins comerciais.
+Caso algum detentor de direitos deseje a remoção de conteúdo, entre em contato.

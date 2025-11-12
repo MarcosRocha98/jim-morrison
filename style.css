@@ -31,14 +31,12 @@ body {
     text-decoration: none;
     font-size: 1.3rem;
     font-weight: 600;
-    background-color: var(--branco);
+    background-color: var(--dourado);
     padding: 2px 20px;
-    color: var(--areia);
+    color: var(--preto);
     border-radius: 25px;
-    border: 2px solid var(--douradoClaro);
+    border: 2px solid var(--branco);
 }
-
-/* Cartão */
 
 /* Conteúdo - Cards */
 #conteudo {
@@ -113,15 +111,21 @@ body {
 #contato {
     display: flex;
     background-color: var(--preto);
+    border: 2px solid var(--dourado);
+    padding: 30px 0;
+    justify-content: center;
+    align-items: center;
+}
+
+#mapa {
+    text-align: center;
 }
 
 #mapa iframe {
     display: flex;
     width: 500px;
     height: 250px;
-    margin-left: 100px;
-    margin-top: -30px;
-    border: 2px solid var(--dourado);
+    margin: 0 auto;
     border-radius: 10px;
 }
 
@@ -129,30 +133,64 @@ body {
     display: none;
 }
 
-#texto {
+#mapa p {
     color: var(--branco);
-    margin-left: 50px;
-    margin-top: 100px;
+    margin-top: 15px;
+    font-family: 'Courier New', Courier, monospace;
 }
 
-/* Rodapé */
 #rodape {
     background-color: var(--preto);
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     border-top: 2px solid var(--dourado);
+    padding: 10px 20px;
 }
 
 #rodape p {
     color: var(--branco);
-    margin: 20px;
+    margin: 0;
 }
 
-.redes {
-    margin: 20px;
+#rodape .icon {
+    width: 25px;
+    height: 25px;
+    margin: 0 5px;
 }
 
-#rodape #copy {
-    margin-top: 15px;
+#rodape a {
+    display: inline-block;
+}
+
+#rodape .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Topo do Site */
+#topo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+#topo img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#topo img:hover {
+    transform: scale(1.1);
+}
+
+/* Rolagem suave */
+html {
+    scroll-behavior: smooth;
 }
 
 /* Fim - Layout */
@@ -374,6 +412,21 @@ main h2 {
     display: block;
 }
 
+/* Contato */
+#mapa iframe {
+    display: none;
+}
+
+#mapa a {
+    display: inline-block;
+}
+
+#mapa img {
+    width: 100px;
+    height: auto;
+}
+
+
 /* Fim - Smartphone Portrait */
 
 
@@ -512,7 +565,7 @@ main h2 {
     }
 
     #conteudo .Card {
-        width: 45%;
+        width: 30%;
     }
 }
 
@@ -683,6 +736,34 @@ main h2 {
     #jimdoors .qrcode img {
         width: 300px;
         height: auto;
+    }
+
+    /* Contato */
+    #mapa {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        flex-direction: row;
+    }
+
+    #mapa iframe {
+        display: block;
+        width: 500px;
+        height: 250px;
+        border-radius: 10px;
+    }
+
+    #mapa p {
+        color: var(--branco);
+        font-family: 'Courier New', Courier, monospace;
+        text-align: left;
+        max-width: 350px;
+        margin: 0;
+    }
+
+    #mapa a {
+        display: none;
     }
 }
 
